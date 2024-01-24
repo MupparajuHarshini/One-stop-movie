@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/hp.jpg);
+    background-size: cover;
+  }
+  
+  .container {
+    /* max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #000080;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  
+  background-color:transparent;
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(20px);
+  width: 600px;
+  padding: 20px;
+  margin: 5% 20% 0;
+  text-align: center;
+
+}
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 70%;
+    padding: 8px;
+    background-color: transparent;
+    /* color: black; */
+  }
+  input::placeholder{
+    color: black;
+  }
+  
+  button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
