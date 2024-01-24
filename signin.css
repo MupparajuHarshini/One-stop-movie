@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image:url(images/gp.jpg);
+    background-size: 1300px;
+    background-position: center;
+    
+}
+.signin {
+    width: 280px;
+    background-color:transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    margin: 5% 40% 5%;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 35px;
+    
+
+}
+.input-box {
+    background-color:transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    color: white;
+}
+#sub_btn {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 15px;
+    width: 50%;
+    border: none;
+    
+}
+#sub_btn:hover{
+    opacity: 0.8;
+}
+#sub_btn:active{
+    opacity: 0.5;
+    box-shadow: 5px 5px 10px;
+}
+.checkbox{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.checkbox a {
+    cursor: pointer;
+}
+
+
+
+
