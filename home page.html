@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="home page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<header> 
+  <nav class="navbar"> 
+    <div class="navdiv">
+   
+    <ul> 
+      <li><a href="home page.html">Home</a></li>
+
+      <li><a href="watch.html">WatchList</a></li>
+    </ul>
+        
+  </div>
+  </nav>
+  <button type="text" id="log_out">Log out</button>
+  <form id="form" class="search-bar">
+    <input type="text" id="search" class="search" placeholder="Search">
+   
+  </form>
+
+</header> 
+  
+<div id="tags">
+  <div class="tag">Action</div>
+  <div class="tag">Thriller</div>
+  <div class="tag">Adventure</div>
+  <div class="tag">Comedy</div>
+</div>
+<main id="main">
+   
+  <div class="movie"> 
+    <img src="images/popcorn 1.jpg" alt="images"> 
+   <div class="movie-info">
+     <h3>Movie Title</h3>
+     <span class="blue">9.8</span>
+   </div>
+    <div class="overview">
+      <h3>Overview</h3>
+     Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Ducimus quos temporibus autem accusantium<br>nisi sapiente sed odit asperiores ipsa deserunt!
+    </div>
+    
+  </div>
+ 
+</div>
+
+
+ 
+
+  <div class="movie"> 
+    <img src="images/popcorn 1.jpg" alt="images"> 
+   <div class="movie-info">
+     <h3>Movie Title</h3>
+     <span class="blue">9.8</span>
+   </div>
+    <div class="overview">
+     Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Ducimus quos temporibus autem accusantium<br>nisi sapiente sed odit asperiores ipsa deserunt!
+    </div>
+   
+  </div>
+
+
+
+  <div class="movie"> 
+    <img src="images/popcorn 1.jpg" alt="images"> 
+   <div class="movie-info">
+     <h3>Movie Title</h3>
+     <span class="blue">9.8</span>
+   </div>
+    <div class="overview">
+     Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Ducimus quos temporibus autem accusantium<br>nisi sapiente sed odit asperiores ipsa deserunt!
+    </div>
+  </div>
+
+ 
+</main>
+<script type="module">
+   // Import the functions you need from the SDKs you need
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-analytics.js";
+  import { getAuth, signOut } from  "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBQkKKi9uPPCT5mD-60AhgbY3tvwAz0SFE",
+    authDomain: "movie-9e85c.firebaseapp.com",
+    databaseURL: "https://movie-9e85c-default-rtdb.firebaseio.com",
+    projectId: "movie-9e85c",
+    storageBucket: "movie-9e85c.appspot.com",
+    messagingSenderId: "1063260797761",
+    appId: "1:1063260797761:web:23c4c4a7990c48d044ffc0"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const auth = getAuth();
+    // import { getAuth, signOut } from  "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js"
+document.getElementById("log_out").addEventListener("click", function(){
+    signOut(auth).then(()=>{
+        // console.log('Log out successfully!!');
+        // alert('Log out successfully!!');
+        window.location.href = "login.html";
+    })
+    .catch((error)=>{
+        console.log('An error occured');
+    })
+})
+</script>
+
+
+
+  
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
